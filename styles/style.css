@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  background-color: rgba(22, 22, 23, 0.651);
+  transition-delay: 0.1s;
+  font-size: 14px;
+}
+.navigation:hover {
+  background-color: black;
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15%;
+  list-style: none;
+}
+.navigation a {
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+}
+.navigation a:hover {
+  color: white;
+}
+.navigation svg {
+  fill: rgb(200, 200, 200);
+}
+.navigation svg:hover {
+  fill: white;
+}
+.products ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15%;
+  align-items: center;
+  list-style: none;
+}
+.products a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  transition-delay: 0.1s;
+}
+.products a:hover {
+  color: #06c;
+}
+.products {
+  background-color: #d2d2d745;
+}
+.iphone-14-pro img {
+  width: 40px;
+}
+.iphone-14 img {
+  width: 38px;
+}
+.iphone-13 img {
+  width: 36px;
+}
+.iphone-se img {
+  width: 19px;
+}
+.iphone-12 img {
+  width: 22px;
+}
+.compare img {
+  width: 45px;
+}
+.airpods img {
+  width: 39px;
+}
+.airtag img {
+  width: 30px;
+}
+.ios img {
+  width: 32px;
+}
+.shop img {
+  width: 58px;
+}
+.products {
+  text-align: center;
+}
+.iphone-14-pro p::after {
+  content: "new";
+  display: block;
+  color: #bf4800;
+  font-size: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.iphone-14 p::after {
+  content: "new";
+  display: block;
+  color: #bf4800;
+  font-size: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.iphone-14-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.news h2 {
+  font-size: 12px;
+  color: #6e6e73;
+}
+.iphone-model {
+  font-size: 21px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.news a {
+  font-size: 19px;
+  color: #06c;
+  text-decoration: none;
+}
+.news a:hover {
+  text-decoration: underline;
+}
+.news a::after {
+  content: "";
+  border: solid #06c;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-bottom: 2px;
+}
+.gradient {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 44px;
+  background-image: linear-gradient(
+    90deg,
+    #2ca2b4,
+    #5598de 24%,
+    #7f87ff 45%,
+    #f65aad 76%,
+    #ec3d43
+  );
+  overflow-x: hidden;
+  margin: 20px 0;
+}
+.new-iphone-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.new-iphone {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.new-iphone img {
+  width: 100%;
+  object-fit: cover;
+}
+.iphone-14-pro-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.gradient-pro {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 44px;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  overflow-x: hidden;
+  margin: 20px 0;
+}
+.bg-black {
+  background-color: black;
+}
+.iphone-model-pro {
+  font-size: 21px;
+  font-weight: 600;
+  user-select: none;
+  color: white;
+}
+.pro-news {
+  margin-top: 100px;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
