@@ -266,10 +266,16 @@
   font-size: 48px;
   margin-top: 50px;
 }
-.compare-iphone {
+.compare-iphone-wrapper {
+  padding: 0 10%;
   display: flex;
   justify-content: center;
-  gap: 40px;
+}
+.compare-iphone {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 30px;
   margin-top: 50px;
 }
 .iphone-for-compare {
@@ -292,12 +298,13 @@
   background-color: rgb(69, 150, 231);
 }
 .read-only-14-pro {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   user-select: none;
+  margin-bottom: 10px;
 }
 .comp-phone-text {
-  font-size: 24px;
+  font-size: 16px;
 }
 .iphone-for-compare > a {
   font-size: 22px;
@@ -381,4 +388,104 @@
   font-family: Helvetica, Arial, sans-serif;
   justify-content: center;
   margin-top: -20px;
+}
+.iphone-for-compare img {
+  width: 70%;
+}
+.screen-size {
+  border-top: 2px solid#6e6e73;
+  margin-top: 20px;
+}
+.screen-size p {
+  margin-top: 10px;
+}
+.dynamic-island {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 150px;
+  margin: 50px auto;
+}
+.dynamic-island img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.dynamic-island p {
+  margin-top: 10px;
+}
+.sos img {
+  width: 50px;
+}
+.sos p {
+  margin-top: 10px;
+}
+.iphone-camera {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 200px;
+  margin: 50px auto;
+}
+.iphone-camera img {
+  width: 50px;
+  align-self: center;
+}
+.iphone-camera p {
+  margin-top: 10px;
+}
+.battery img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.chip img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.chip {
+  margin-top: 40px;
+}
+.face-id {
+  margin-top: 40px;
+}
+.face-id img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.transparent {
+  color: transparent;
+  user-select: none;
+}
+.gen-5 {
+  margin-top: 40px;
+}
+.gen-5 img {
+  width: 65px;
+  margin-bottom: 10px;
+}
+.comp-shop-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 24px;
+  margin: 50px 0;
+}
+.comp-shop-links a {
+  text-decoration: none;
+  color: #06c;
+}
+.comp-shop-links a:hover {
+  text-decoration: underline;
+}
+.comp-shop-links a::after {
+  content: "";
+  border: solid #06c;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-bottom: 2px;
 }
