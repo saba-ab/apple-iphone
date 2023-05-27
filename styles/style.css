@@ -549,9 +549,12 @@ body {
 .accessories-image-airpods {
   width: 100%;
 }
-
+.accessories-image-airpods {
+  display: flex;
+  justify-content: center;
+}
 .accessories-image-airpods img {
-  width: 100%;
+  width: 110%;
   object-fit: cover;
 }
 .accessories-text-relative {
@@ -560,8 +563,8 @@ body {
   width: 390px;
   left: 50%;
   transform: translateX(-50%);
-  top: 10;
-  margin-top: 80px;
+  top: 10%;
+  /* margin-top: 40px; */
 }
 .accessories-container-relative {
   position: relative;
@@ -592,6 +595,135 @@ body {
 .accessories-text-relative a::after {
   content: "";
   border: solid #06c;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-bottom: 2px;
+}
+.commercial-header {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 80px 0;
+}
+.iphone-commercial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.commercial-full-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 5%;
+  overflow-x: hidden;
+}
+.ios-comm-text {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+}
+.commercial-full-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.ios-comm-text h5 {
+  font-size: 48px;
+}
+.ios-comm-text p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.ios-comm-text a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #06c;
+}
+.ios-comm-text a:hover {
+  text-decoration: underline;
+}
+.ios-comm-text a::after {
+  content: "";
+  border: solid #06c;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-bottom: 2px;
+}
+.commercial-container {
+  margin: 100px 0;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  padding: 0 5%;
+}
+.commercial-half-container {
+  width: 50%;
+  position: relative;
+  min-height: 500px;
+  background-color: white;
+}
+.commercial-half-container img {
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+}
+.switching-text {
+  position: absolute;
+  z-index: 1;
+  width: 390px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.switching-text h5 {
+  font-size: 40px;
+}
+#iphoneInHands {
+  object-fit: cover;
+}
+.commercial-half-container-right img {
+  height: 100%;
+}
+.privacy-text {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.privacy-text h5 {
+  font-size: 38px;
+}
+.privacy-text a {
+  color: white;
+}
+.commercial-container a {
+  text-decoration: none;
+}
+.commercial-container a:hover {
+  text-decoration: underline;
+}
+.commercial-half-container-left a::after {
+  content: "";
+  border: solid #06c;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-bottom: 2px;
+}
+.commercial-half-container-right a::after {
+  content: "";
+  border: solid rgb(255, 255, 255);
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
