@@ -21,6 +21,11 @@ body {
   padding: 5px 15%;
   list-style: none;
 }
+.navigation ul:last-child svg {
+  fill: white;
+  width: 20px;
+  opacity: 0;
+}
 .navigation a {
   text-decoration: none;
   color: rgb(200, 200, 200);
@@ -269,20 +274,21 @@ body {
   margin-top: 50px;
 }
 .compare-iphone-wrapper {
-  padding: 0 10%;
+  padding: 0 5%;
   display: flex;
   justify-content: center;
 }
 .compare-iphone {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   /* flex-wrap: wrap; */
   gap: 30px;
   margin-top: 50px;
+  align-items: baseline;
 }
 .iphone-for-compare {
   text-align: center;
-  padding: 40px 0;
+  padding: 10px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.461);
 }
 .buy-button {
@@ -378,9 +384,9 @@ body {
   border-radius: 10px;
   font-size: 24px;
 }
-.comp-se .read-only-14-pro p {
+/* .comp-se .read-only-14-pro p {
   padding-top: 203px;
-}
+} */
 .iphone-old-colors::after {
   content: "new";
   display: flex;
@@ -392,7 +398,8 @@ body {
   margin-top: -20px;
 }
 .iphone-for-compare img {
-  width: 70%;
+  width: 150px;
+  /* width: 50%; */
 }
 .screen-size {
   border-top: 2px solid#6e6e73;
@@ -735,4 +742,90 @@ body {
   padding: 3px;
   transform: rotate(-45deg);
   margin-bottom: 2px;
+}
+@media (max-width: 1100px) {
+  .iphone-se-news {
+    flex-direction: column;
+  }
+  .compare-iphone {
+    flex-wrap: wrap;
+  }
+  .commercial-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navigation ul:last-child svg {
+    opacity: 1;
+  }
+  .navigation ul > *:not(:first-child):not(:last-child) {
+    display: none;
+  }
+  .products ul {
+    overflow: auto;
+    padding: 10px 0;
+  }
+  .products ul li {
+    padding: 0 30px;
+    min-width: 75px;
+  }
+  .products li p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 963px) {
+  .compare-iphone {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .gradient-se {
+    font-size: 32px;
+  }
+  .gradient-pro {
+    font-size: 32px;
+  }
+  .gradient {
+    font-size: 32px;
+  }
+  .choose-iphone-header {
+    font-size: 22px;
+  }
+  .accessories-header {
+    font-size: 24px;
+  }
+  .accessories-container h5 {
+    font-size: 30px;
+  }
+  .accessories p {
+    font-size: 16px;
+  }
+  .accessories a {
+    font-size: 14px;
+  }
+  .accessories-container-relative h5 {
+    font-size: 30px;
+  }
+  .commercial-header {
+    font-size: 22px;
+    text-align: center;
+  }
+  .iphone-commercial h5 {
+    font-size: 22px;
+  }
+  .iphone-commercial p {
+    font-size: 18px;
+  }
+  .iphone-commercial a {
+    font-size: 14px;
+  }
+  .switching-text {
+    width: 50%;
+  }
+  .commercial-half-container {
+    width: 100%;
+  }
+  .accessories-text-relative {
+    width: 350px;
+  }
 }
